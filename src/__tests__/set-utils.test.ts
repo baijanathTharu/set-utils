@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { difference, intersection } from '../index';
+import { difference, intersection, union } from '../index';
 
 // numbers
 const oddNumbersLessThanTen = [1, 3, 5, 7, 9];
@@ -46,4 +46,14 @@ test('testing intersection between even and prime numbers less than 10', () => {
 test('testing intersection between company A and company C', () => {
   const interComAAndComC = intersection(companyA, companyC);
   expect(interComAAndComC).toStrictEqual(['hari']);
+});
+
+test('union between odd and even number less than 10', () => {
+  const uni = union(oddNumbersLessThanTen, evenNumbersLessThanTen);
+  expect(uni).toStrictEqual([1, 3, 5, 7, 9, 2, 4, 6, 8, 10]);
+});
+
+test('union between company B and company C', () => {
+  const uni = union(companyB, companyC);
+  expect(uni).toStrictEqual(['hari', 'shyam', 'lakshmi', 'sita', 'john']);
 });
