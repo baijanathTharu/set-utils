@@ -11,9 +11,11 @@ npm install @baijanathTharu/set-utils
 ## Usage
 
 ```ts
-import { difference, intersection, union } from '@baijanathTharu/set-utils';
+import { difference, intersection, union } from '@baijanaththaru/set-utils';
 const oddNumbersLessThanTen = [1, 3, 5, 7, 9];
 const evenNumbersLessThanTen = [2, 4, 6, 8, 10];
+const primeNumbersLessThanTen = [2, 3, 5, 7];
+
 
 // difference
 const diffBetweenOddAndPrimeNumbersLessThanTen = difference(
