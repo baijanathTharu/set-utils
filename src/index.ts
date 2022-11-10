@@ -21,6 +21,5 @@ export function intersection<T>(arr1: T[], arr2: T[]): T[] {
  */
 export function union<T>(arr1: T[], arr2: T[]): T[] {
   const uni = new Set([...arr1, ...arr2]);
-  console.log(uni);
   return Array.from(uni);
 }
