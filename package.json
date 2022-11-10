@@ -1,0 +1,43 @@
+{
+  "name": "@baijanaththaru/set-utils",
+  "version": "1.0.0",
+  "description": "This is a collection of utils related to set of primitive types such as number, string, etc.",
+  "main": "lib/index.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc",
+    "format": "prettier --write \"src/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baijanathTharu/set-utils.git"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "set"
+  ],
+  "author": "Baijanath Tharu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baijanathTharu/set-utils/issues"
+  },
+  "homepage": "https://github.com/baijanathTharu/set-utils#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.8.4",
+    "vitest": "^0.25.1"
+  }
+}
