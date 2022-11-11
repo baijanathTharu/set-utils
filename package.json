@@ -1,6 +1,6 @@
 {
   "name": "@baijanaththaru/set-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a collection of utils related to set of primitive types such as number, string, etc.",
   "main": "lib/index.js",
   "files": [
